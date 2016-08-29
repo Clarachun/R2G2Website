@@ -1,0 +1,46 @@
+body {
+  font-family: 'Poiret One', cursive;
+font-size: 15px;
+}
+a.navbar-brand {
+  font-size: 40px;
+}
+.freedom {
+  margin: auto;
+  background: white;
+  color: white;
+  padding-top: 20px;
+}
+.navbar-default {
+  background-color: white;
+  border-color: white;
+}
+.dropdown-toggle {
+  
+}
+@media screen and (min-width: 768px) {
+  .freedom {
+    width: 70%;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .freedom {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .freedom {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .freedom {
+    width: 100%;
+  }
+}
+@media only screen and (max-width : 320px) {
+  .freedom {
+    width: 100%;
+  }
+}
