@@ -1,6 +1,37 @@
 body {
-  font-family: 'Poiret One', cursive;
-font-size: 15px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 15px;
+}
+:hover {
+  background: white;
+  background-color: white;
+  color: black;
+}
+.navbar-header a.navbar-brand {
+  color: black;
+}
+.navbar-header a.navbar-brand:hover {
+  color: black;
+}
+.navbar-default .navbar-nav>.active>a{
+  color: black;
+  background-color: white;
+}
+.navbar-default .navbar-nav>.active>a:hover {
+  background: white;
+  color: black;
+}
+.navbar-default .navbar-nav>li>a {
+  color: red;
+  font-size: 20px;
+}
+.dropdown-menu>li>a {
+  color: red;
+  background: white;
+}
+.dropdown-menu>li>a:hover {
+  background-color: white;
+  color: black;
 }
 a.navbar-brand {
   font-size: 40px;
@@ -9,19 +40,33 @@ a.navbar-brand {
   margin: auto;
   background: white;
   color: white;
-  padding-top: 20px;
 }
 .navbar-default {
   background-color: white;
   border-color: white;
 }
-.dropdown-toggle {
-  
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; // remove the gap so it doesn't close
+    background: white;
+    color: black;
+ }
+.dropdown-menu .divider {
+  margin: 1px;
+}
+ul.dropdown-menu {
+  padding:0px;
+  background: white;
+}
+ul.dropdown-menu li:hover {
+  background: white;
+  color: red;
 }
 @media screen and (min-width: 768px) {
   .freedom {
     width: 70%;
     margin: auto;
+    padding-top: 20px;
   }
 }
 @media screen and (max-width: 768px) {
