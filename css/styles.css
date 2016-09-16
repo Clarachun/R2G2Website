@@ -62,24 +62,6 @@ ul.dropdown-menu li:hover {
   background: white;
   color: red;
 }
-.box{
-	width:100px;
-	height:100px;
-}
-
-.black{
-	background:url(https://raw.githubusercontent.com/Clarachun/R2G2Website/master/Photographs/block.png);
-}
-.box .black:hover{
-	background:black;
-}
-nav.navbar .navbar-default{
-  padding: 0px;
-  margin: 0px;
-}
-h1.fuck {
-  margin: 0px;
-}
 @media screen and (min-width: 768px) {
   .freedom {
     width: 70%;
@@ -101,6 +83,30 @@ h1.fuck {
     color: white;
     border-radius: 50px;
   }
+  .rivendell {
+    background: white;
+    left: 120px;
+    position: relative;
+    top:20px;
+  }
+ .greenwood {
+   background: white;
+   left: 370px;
+   position: relative;
+   top:200px;
+    }
+  .theshire {
+    background: white;
+    left: 640px;
+    position: relative;
+    top:20px
+   }
+   .mirkwood {
+     background: white;
+     left: 227px;
+     position: relative;
+     bottom:180px;
+    }
 }
 @media screen and (max-width: 768px) {
   .freedom {
