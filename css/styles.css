@@ -68,11 +68,24 @@ ul.dropdown-menu li:hover {
   width: 100%;
 }
 .circle {
-    width: 400px;
-    height: 400px; /* as the half of the width */
-    background-color: transparent;;
-    border-radius: 50%;
-    border: 9px solid white;
+  width: 400px;
+  height: 400px;
+  background-color: transparent;;
+  border-radius: 50%;
+  border: 9px solid white;
+}
+.rectangle {
+  height: 300px;
+  width: 500px;
+  background-color: transparent;
+  border: 3px solid white;
+  position: relative;
+  left: 550px;
+  bottom: 350px;
+}
+.rectangle p {
+  font-size: 32px;
+  color: white;
 }
 .greenwood {
   background: black;
