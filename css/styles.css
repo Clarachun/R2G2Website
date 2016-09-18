@@ -51,7 +51,7 @@ a.navbar-brand {
 .shire {
   background-image: url(https://github.com/Clarachun/R2G2Website/blob/master/Photographs/134045728_14256865782481n.png?raw=true);
   width: 100%;
-  height: 600px;
+  height: 670px;
 }
 .dropdown:hover .dropdown-menu {
     display: block;
@@ -93,14 +93,12 @@ img.rohan {
   right: 40px;
   position: relative;
 }
+img.rohan:hover {
+  background: pink;
+}
 img.middle-earth {
   position: relative;
   left: 70px;
-  bottom: 30px;
-}
-img.gandalf {
-  position: relative;
-  left: 85px;
   bottom: 30px;
 }
 img.gandalf {
