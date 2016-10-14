@@ -1,7 +1,42 @@
+
 body {
   font-size: 15px;
   font-family: 'Megrim', cursive;
   font-weight: bold;
+}
+.bgimg-1 .broomir h1 {
+  text-align: center;
+  bottom: 400px;
+  position: relative;
+  font-size: 70px;
+  color: white;
+}
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
+  position: relative;
+  background-attachment: FIXED;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bgimg-1 {
+  background-image: url("https://github.com/Clarachun/R2G2Website/blob/master/Photographs/134045728_14256865782481n.png?raw=true");
+  height: 100%;
+  width: 100%;
+}
+
+.bgimg-2 {
+  background: white;
+  min-height: 400px;
+  width: 100%;
+}
+.bgimg-3 {
+  background: grey;
+  min-height: 300px;
+}
+.bgimg-4 {
+  background-image: url("http://www.aevitasweddings.com/wp-content/uploads/2016/01/05-downtown-los-angeles-wedding-photographer-engagement-session-photos-1.jpg");
+  height:500px;
+  width: 100%;
 }
 .mirkwood {
   background: transparent;
@@ -49,7 +84,6 @@ a.navbar-brand {
   font-size: 40px;
 }
 .shire {
-  background-image: url(https://github.com/Clarachun/R2G2Website/blob/master/Photographs/134045728_14256865782481n.png?raw=true);
   width: 100%;
   height: 670px;
 }
@@ -84,8 +118,9 @@ ul.dropdown-menu li:hover {
   bottom: 350px;
 }
 .rectangle p {
-  font-size: 32px;
+  font-size: 25px;
   color: white;
+  padding: 10px;
 }
 .greenwood {
   background: black;
@@ -112,7 +147,7 @@ img.rohan:hover {
 img.middle-earth {
   position: relative;
   left: 70px;
-  bottom: 30px;
+  bottom: 40px;
 }
 img.gandalf {
   position: relative;
