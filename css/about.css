@@ -37,6 +37,12 @@ body {
 .mirkwood {
   background: transparent;
 }
+.laketown {
+align:center;
+width:70%;
+position:realitive;
+left:50px;
+}
 .dropdown-menu {
   background-color: transparent;
 }
