@@ -4,6 +4,27 @@ body {
   font-family: 'Megrim', cursive;
   font-weight: bold;
 }
+p {
+  margin: 0px;
+}
+h1 {
+  margin: 0px;
+}
+h3{
+  margin: 0px;
+}
+h4{
+  margin: 0px;
+}
+.cats {
+  height:10px;
+  width: 100%;
+  background: blue;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    /* background-color: #eee; */
+}
 .bgimg-1 .broomir h1 {
   text-align: center;
   bottom: 400px;
@@ -23,23 +44,48 @@ body {
   height: 100%;
   width: 100%;
 }
-
 .bgimg-2 {
   background: white;
   min-height: 400px;
   width: 100%;
 }
 .bgimg-3 {
-  background: grey;
-  min-height: 300px;
+  background: white;
+  height: 500px;
+}
+.bgimg-3 h1 {
+  font-size: 100px;
+  padding: 30px;
+  color: white;
 }
 .bgimg-4 {
-  background-image: url("http://www.aevitasweddings.com/wp-content/uploads/2016/01/05-downtown-los-angeles-wedding-photographer-engagement-session-photos-1.jpg");
-  height:500px;
+  background: white;
+  height:100px;
   width: 100%;
 }
 .mirkwood {
   background: transparent;
+}
+.laketown {
+  width:500px;
+  padding-left: 100px;
+  color: white;
+}
+.rectangle-2{
+  height: 275px;
+  width: 500px;
+  background-color: transparent;
+  border: 3px solid white;
+}
+.thranduil {
+    width: 500px;
+    left: 750px;
+    bottom: 310px;
+    color: white;
+    position: relative;
+}
+h2{
+  margin: 0px;
 }
 .dropdown-menu {
   background-color: transparent;
