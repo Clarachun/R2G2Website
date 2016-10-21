@@ -11,7 +11,7 @@ body {
   background-size: cover;
 }
 .bgimg-1 {
-  background-image: url("https://github.com/Clarachun/R2G2Website/blob/master/Photographs/134045728_14256865782481n.png?raw=true");
+  background: transparent;
   height: 100%;
   width: 100%;
 }
@@ -38,10 +38,11 @@ body {
   background: transparent;
 }
 .laketown {
-align:center;
-width:70%;
-position:realitive;
-left:50px;
+  text-align:center;
+  width:60%;
+  position:realitive;
+  margin:auto;
+  padding-top: 50px;
 }
 .dropdown-menu {
   background-color: transparent;
