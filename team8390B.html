@@ -1,77 +1,116 @@
 <!doctype html>
 <html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/teama.css">
-        <link href="https://fonts.googleapis.com/css?family=Megrim" rel="stylesheet">
-    </head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/teamb.css">
+    <link href="https://fonts.googleapis.com/css?family=Megrim" rel="stylesheet">
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+        function drawChart() {
+          var data = google.visualization.arrayToDataTable([
+            ['Task', 'Values'],
+            ['Wins',     6],
+            ['Losses',      2],
+            ['Ties',  0],
+            ]);
+          var options = {
+            title: 'Our Wins and Losses for this Season'
+          };
+          var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+          chart.draw(data, options);
+        }
+    </script>
+</head>
 
     <body>
       <div class="bgimg-1">
         <div class="caption">
           <div class="shire">
             <div class="mirkwood">
-            <nav class="navbar navbar-default">
-              <!-- Brand and toggle get grouped for better mobile display -->
-              <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-              </div>
-
+              <nav class="navbar navbar-default">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
-              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-left">
-                  <li class="active"><a href="/">HOME</a></li>
-                  <li class="dropdown">
-                    <a href="file:///C:/Users/YT15/Documents/GitHub/R2G2Website/about.html" class="dropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ABOUT</a>
-                    <ul style="  background: transparent" class="dropdown-menu">
-                      <li><a href="file:///C:/Users/YT15/Documents/GitHub/R2G2Website/about.html">ABOUT</a></li>
-                      <li role="separator" class="divider"></li>
-                      <li><a href="file:///C:/Users/YT15/Documents/GitHub/R2G2Website/team8390A.html">TEAM 3890A</a></li>
-                      <li role="separator" class="divider"></li>
-                      <li><a href="file:///C:/Users/YT15/Documents/GitHub/R2G2Website/team8390B.html">TEAM 3890B</a></li>
-                    </ul>
-                  <li class="dropdown">
-                    <a href="file:///C:/Users/YT15/Documents/GitHub/R2G2Website/vex.html" class="dropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">VEX</a>
-                    <ul style="  background: transparent" class="dropdown-menu">
-                      <li><a href="file:///C:/Users/YT15/Documents/GitHub/R2G2Website/2014season.html">2014-2015 SEASON</a></li>
-                      <li role="separator" class="divider"></li>
-                      <li><a href="file:///C:/Users/YT15/Documents/GitHub/R2G2Website/2015season.html">2015-2016 SEASON</a></li>
-                      <li role="separator" class="divider"></li>
-                      <li><a href="file:///C:/Users/YT15/Documents/GitHub/R2G2Website/2016season.html">2016-2017 SEASON</a></li>
-                    </ul>
-                  <li><a href="file:///C:/Users/YT15/Documents/GitHub/R2G2Website/rocketry.html">ROCKETRY</a></li>
-                  <li><a href="/file:///C:/Users/YT15/Documents/GitHub/R2G2Website/latest.html">LASTEST NEWS</a></li>
-                  <li><a href="file:///C:/Users/YT15/Documents/GitHub/R2G2Website/about.html">CONTACT US</a></li>
-                  </li>
-                </ul>
-              </div><!-- /.navbar-collapse -->
-            </nav>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav navbar-left">
+                    <li class="active"><a href="file:///C:/Users/YT15/Documents/GitHub/R2G2Website/index.html">HOME</a></li>
+                    <li class="dropdown">
+                      <a href="file:///C:/Users/YT15/Documents/GitHub/R2G2Website/about.html" class="dropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ABOUT</a>
+                      <ul style="  background: transparent" class="dropdown-menu">
+                        <li><a href="file:///C:/Users/YT15/Documents/GitHub/R2G2Website/about.html">ABOUT</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="file:///C:/Users/YT15/Documents/GitHub/R2G2Website/team8390A.html">TEAM 3890A</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="file:///C:/Users/YT15/Documents/GitHub/R2G2Website/team8390B.html">TEAM 3890B</a></li>
+                      </ul>
+                      <li class="dropdown">
+                        <a href="file:///C:/Users/YT15/Documents/GitHub/R2G2Website/vex.html" class="dropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">VEX</a>
+                        <ul style="  background: transparent" class="dropdown-menu">
+                          <li><a href="file:///C:/Users/YT15/Documents/GitHub/R2G2Website/2014season.html">2014-2015 SEASON</a></li>
+                          <li role="separator" class="divider"></li>
+                          <li><a href="file:///C:/Users/YT15/Documents/GitHub/R2G2Website/2015season.html">2015-2016 SEASON</a></li>
+                          <li role="separator" class="divider"></li>
+                          <li><a href="file:///C:/Users/YT15/Documents/GitHub/R2G2Website/2016season.html">2016-2017 SEASON</a></li>
+                        </ul>
+                        <li><a href="file:///C:/Users/YT15/Documents/GitHub/R2G2Website/rocketry.html">ROCKETRY</a></li>
+                      <li><a href="/file:///C:/Users/YT15/Documents/GitHub/R2G2Website/latest.html">LASTEST NEWS</a></li>
+                      <li><a href="file:///C:/Users/YT15/Documents/GitHub/R2G2Website/contact.html">CONTACT US</a></li>
+                    </li>
+                  </ul>
+                </div><!-- /.navbar-collapse -->
+              </nav>
+            </div>
+          </div><!-- /.container-fluid -->
+        </div>
+
+        <div class="bgimg-2">
+          <div class="rivendell">
+            <h1>TEAM 8390A</h1>
           </div>
-        </div><!-- /.container-fluid -->
-      </div>
+        </div>
 
-      <div class="bgimg-2">
-      </div>
+        <div class="bgimg-3">
+          <div class="camelot">
+            <h1>Hello!</h1>
+            <p>We are Team 8390A, formerlly just 8390! We consist of half of the R2G2'S All-Girls Robotics team, and consist of the Seniors and Juniors on our robotics teams here at Notre Dame Academy.</p>
+          </div>
+        </div>
 
-      <div class="bgimg-3">
-      </div>
+        <div class="bgimg-4">
+          <div class="col-lg-6 col-sm-12"><div id="piechart"></div></div>
+          <div class="col-lg-6 col-sm-12">
+            <div class="forever">
+              <h3>Viewpoint</h3>
+              <p>Ended: 4th Place<br>
+                Won: 6<br>
+                Lost: 3<br>
+                Tied: 0<br>
+                Awards: 1</p>
+            </div>
+          </div>
+        </div>
 
-      <div class="bgimg-4">
-      </div>
+        <div class="bgimg-5">
+        </div>
 
         <script src="https://code.jquery.com/jquery-1.12.2.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>

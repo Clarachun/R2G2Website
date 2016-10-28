@@ -3,8 +3,95 @@ body {
   font-family: 'Megrim', cursive;
   font-weight: bold;
 }
+p {
+  margin: 0px;
+}
+h1 {
+  margin: 0px;
+}
+h3{
+  margin: 0px;
+}
+h4{
+  margin: 0px;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    /* background-color: #eee; */
+}
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
+  position: relative;
+  background-attachment: FIXED;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.camelot {
+    border: 1px solid black;
+    padding-left: 10px;
+}
+.bgimg-1 {
+  background: white;
+  height: 100%;
+  width: 100%;
+}
+h1 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.bgimg-2 {
+  width: 60%;
+  margin: auto;
+}
+.bgimg-3 h1 {
+  margin-left: 50px;
+}
+.bgimg-3 p {
+    padding-right: 10px;
+}
+.bgimg-3 {
+    width: 60%;
+    margin: auto;
+    padding-top: 50px;
+}
+p {
+    margin: 0 0 10px;
+}
+.bgimg-3 h1 {
+  color: black;
+}
+.bgimg-4 {
+  background: white;
+  width: 100%;
+}
 .mirkwood {
   background: transparent;
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    color: #d43256;
+    background-color: transparent;
+}
+.forever {
+  margin: auto;
+  text-align: center;
+}
+.rivendell {
+  margin: auto;
+  color: white;
+  background-color: black;
+  height: 120px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+.thranduil {
+    width: 500px;
+    left: 750px;
+    bottom: 310px;
+    color: black;
+    position: relative;
+}
+h2{
+  margin: 0px;
 }
 .dropdown-menu {
   background-color: transparent;
@@ -51,29 +138,68 @@ a.navbar-brand {
 .shire {
   width: 100%;
 }
-.mirkwood {
-  width: 70%;
-  margin: auto;
-  padding-top: 20px;
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; // remove the gap so it doesn't close
+    color: #58cee3;
+ }
+.dropdown-menu .divider {
+  margin: 1px;
 }
-
-@media screen and (max-width: 768px) {
-  .shire {
-    width: 100%;
+ul.dropdown-menu li:hover {
+  color: #d43256;
+}
+.mirkwood {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .mirkwood {
+    width: 70%;
+    margin: auto;
+    padding-top: 20px;
+  }
+  #piechart {
+    width: 500px;
+    height: 300px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .rivendell h1 {
+    font-size: 70px;
+    padding-top: 20px;
+    padding-left: 40px;
+  }
+  .forever {
+    margin-top: 70px;
+  }
+  #piechart {
+    margin: auto;
+  }
+  .bgimg-4 {
+    background: white;
+    width: 70%;
+    height: 300px;
+    margin: auto;
   }
 }
 @media screen and (max-width: 600px) {
-  .shire {
-    width: 100%;
-  }
 }
 @media screen and (max-width: 480px) {
-  .shire {
+  body {
     width: 100%;
+  }
+  .rivendell h1 {
+    font-size: 40px;
+    padding-top: 40px;
+    padding-left: 30px;
+  }
+  .bgimg-2 {
+    width: 80%;
+  }
+  #piechart {
+    width: 390px;
+    height: 300px;
   }
 }
 @media only screen and (max-width : 320px) {
-  .shire {
-    width: 100%;
-  }
 }

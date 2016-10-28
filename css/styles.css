@@ -16,6 +16,9 @@ h3{
 h4{
   margin: 0px;
 }
+.navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
 .cats {
   height:10px;
   width: 100%;
@@ -50,13 +53,12 @@ h4{
   width: 100%;
 }
 .bgimg-3 {
-  background: grey;
-  height: 500px;
+  background: white;
 }
 .bgimg-3 h1 {
   font-size: 100px;
   padding: 30px;
-  color: white;
+  color: black;
 }
 .bgimg-4 {
   background: white;
@@ -66,23 +68,9 @@ h4{
 .mirkwood {
   background: transparent;
 }
-.laketown {
-  width:500px;
-  padding-left: 100px;
-  color: white;
-}
-.rectangle-2{
-  height: 275px;
-  width: 500px;
-  background-color: transparent;
-  border: 3px solid white;
-}
-.thranduil {
-    width: 500px;
-    left: 750px;
-    bottom: 310px;
-    color: white;
-    position: relative;
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    color: #d43256;
+    background-color: transparent;
 }
 h2{
   margin: 0px;
@@ -147,66 +135,28 @@ ul.dropdown-menu li:hover {
 .mirkwood {
   width: 100%;
 }
-.circle {
-  width: 400px;
-  height: 400px;
-  background-color: transparent;;
-  border-radius: 50%;
-  border: 9px solid white;
-}
-.rectangle {
-  height: 300px;
-  width: 500px;
-  background-color: transparent;
-  border: 3px solid white;
-  position: relative;
-  left: 550px;
-  bottom: 350px;
-}
-.rectangle p {
-  font-size: 25px;
-  color: white;
-  padding: 10px;
-}
 .greenwood {
   background: black;
   height: 500px;
   border-radius: 20px;
-  padding: 50px;
 }
-.rivendell {
-  padding: 20px;
-}
-.greenwood img{
-  width: 80px;
-  height: 80px;
-  background: white;
-}
-img.rohan {
-  top: 150px;
-  right: 40px;
+img {
   position: relative;
 }
-img.rohan:hover {
-  background: pink;
-}
-img.middle-earth {
-  position: relative;
-  left: 70px;
-  bottom: 40px;
-}
-img.gandalf {
-  position: relative;
-  left: 170px;
-  top: 150px;
-}
-img.legolas {
-  position: relative;
-  right: 95px;
-  top: 350px;
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid black;
+    width: 400px;
 }
 @media screen and (min-width: 768px) {
-  .mirkwood {
+  .laketown {
+    width: 500px;
+    padding-left: 100px;
+    color: black;
+  }
+.mirkwood {
     width: 70%;
     margin: auto;
     padding-top: 20px;
@@ -214,10 +164,71 @@ img.legolas {
   .shire {
     width: 100%;
   }
-}
-@media screen and (max-width: 768px) {
-  .shire {
-    width: 100%;
+  .rivendell {
+    padding: 20px;
+  }
+  .greenwood {
+    padding: 50px;
+  }
+  .circle {
+    width: 400px;
+    height: 400px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 9px solid white;
+  }
+  .greenwood img {
+    width: 80px;
+    height: 80px;
+    background: white;
+  }
+  img.middle-earth {
+    left: 70px;
+    bottom: 40px;
+  }
+  img.gandalf {
+    left: 170px;
+    top: 150px;
+  }
+  img.legolas {
+    right: 95px;
+    top: 350px;
+  }
+  img.rohan {
+    top: 150px;
+    right: 40px;
+  }
+  .rectangle {
+    height: 300px;
+    width: 500px;
+    background-color: transparent;
+    border: 3px solid white;
+    position: relative;
+    left: 550px;
+    bottom: 350px;
+  }
+  .rectangle p {
+    font-size: 25px;
+    color: white;
+    padding: 10px;
+  }
+  .thranduil {
+    width: 500px;
+    left: 150px;
+    color: black;
+    position: relative;
+  }
+  .rectangle-2{
+    height: 275px;
+    width: 500px;
+    background-color: transparent;
+    border: 3px solid black;
+  }
+  .rectangle-2 p {
+    padding: 20px;
+  }
+  .bgimg-3 {
+    height: 500px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -226,8 +237,65 @@ img.legolas {
   }
 }
 @media screen and (max-width: 480px) {
+  .bgimg-3 {
+    height: 100%;
+  }
+  h2 {
+    margin-top: 10px;
+  }
+  .rectangle-2 {
+    height: 275px;
+    width: 385px;
+    background-color: transparent;
+    border: 3px solid black;
+  }
+  .rectangle-2 p {
+    padding: 20px;
+    font-size: 20px;
+  }
   .shire {
     width: 100%;
+  }
+  .rivendell {
+    padding: 0px;
+    padding-top: 20px;
+  }
+  .greenwood img {
+    width: 70px;
+    height: 70px;
+    background: white;
+  }
+  img.rohan {
+    top: 40px;
+    left: 20px;
+  }
+  img.middle-earth {
+    left: 40px;
+    top: 40px;
+  }
+  img.gandalf {
+    left: 60px;
+    top: 40px;
+  }
+  img.legolas {
+    top: 40px;
+    left: 80px;
+  }
+  .circle {
+    height: 130px;
+  }
+  .rectangle {
+      height: 350px;
+      background-color: transparent;
+      border: 3px solid white;
+      position: relative;
+      width: 300px;
+      margin: auto;
+  }
+  .rectangle p {
+      font-size: 20px;
+      color: white;
+      padding: 10px;
   }
 }
 @media only screen and (max-width : 320px) {
