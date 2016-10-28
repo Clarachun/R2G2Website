@@ -38,11 +38,18 @@ body {
   background: transparent;
 }
 .laketown {
+<<<<<<< Updated upstream
   text-align:center;
   width:60%;
   position:realitive;
   margin:auto;
   padding-top: 50px;
+=======
+align:center;
+width:70%;
+position:realitive;
+
+>>>>>>> Stashed changes
 }
 .dropdown-menu {
   background-color: transparent;
