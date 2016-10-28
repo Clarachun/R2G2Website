@@ -159,9 +159,19 @@ h4{
 .mirkwood {
   background: transparent;
 }
-.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
-    color: #d43256;
-    background-color: transparent;
+.laketown {
+<<<<<<< Updated upstream
+  text-align:center;
+  width:60%;
+  position:realitive;
+  margin:auto;
+  padding-top: 50px;
+=======
+align:center;
+width:70%;
+position:realitive;
+
+>>>>>>> Stashed changes
 }
 .thranduil {
     width: 500px;
