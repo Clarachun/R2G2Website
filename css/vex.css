@@ -1,3 +1,66 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+.w3-navbar li a {
+    color: black;
+    background-color: transparent;
+    font-size: 14px;
+}
+.w3-navbar li a:hover {
+    color: grey;
+    background-color: transparent;
+}
+.container {
+  width: 70%;
+}
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    opacity: 0.7;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.w3-col.m8, .w3-twothird {
+    width: 100%;
+}
+.w3-padding-64 {
+    padding-bottom: 64px!important;
+}
+.w3-content {
+  max-width: 100%;
+  margin: 0px;
+}
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('/w3images/parallax1.jpg');
+    min-height: 400px;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url("/w3images/parallax2.jpg");
+    min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("/w3images/parallax3.jpg");
+    min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
@@ -24,23 +87,29 @@ body {
     border-radius: 4px;
     color: black;
 }
-
+.rivendell img {
+  width: 80px;
+  height: 80px;
+  background: white;
+}
 /* MARKETING CONTENT
 -------------------------------------------------- */
 
 /* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
+.marketing .col-lg-6 {
   margin-bottom: 1.5rem;
   text-align: center;
 }
 .marketing h2 {
   font-weight: normal;
 }
-.marketing .col-lg-4 p {
+.marketing .col-lg-6 p {
   margin-right: .75rem;
   margin-left: .75rem;
 }
-
+.marketing {
+  padding-top: 50px;
+}
 /* Featurettes
 ------------------------- */
 
@@ -54,48 +123,6 @@ body {
   line-height: 1;
   letter-spacing: -.05rem;
 }
-
-
-/* RESPONSIVE CSS
--------------------------------------------------- */
-
-@media (min-width: 40em) {
-  /* Bump up size of carousel content */
-  .carousel-caption h3 {
-    margin-bottom: 5pc;
-    font-size: 50px;
-    margin-right: 400px;
-  }
-  .carousel-caption a {
-    text-decoration: none;
-    color: white;
-  }
-  .carousel-caption a:hover {
-    text-decoration: none;
-    color: white;
-  }
-  .featurette-heading {
-    font-size: 50px;
-  }
-}
-
-@media (min-width: 62em) {
-  .featurette-heading {
-    margin-top: 7rem;
-  }
-}
-.body {
-  background-color: black;
-}
-.lin {
-  background-image: url("https://github.com/Clarachun/R2G2Website/blob/master/Photographs/134045728_14256865782481n.png?raw=true");
-  height: 662px;
-}
-.rivendell img {
-  width: 80px;
-  height: 80px;
-  background: white;
-}
 a title:hover {
   background:white;
   color: black;
@@ -104,25 +131,23 @@ a title:hover {
 .great {
   width: 50px;
   height: 50px;
-  border: 1px solid black;
   position: fixed;
-  top: 45px;
   right: 55px;
+  z-index: 5;
 }
 .great hr {
-  margin: 10px;
+  margin: 8px;
   padding: 0px;
   border-color: black;
 }
 .manuel {
   width: 100%;
-  height: 600px;
-  background-color: black;
+  background-color: white;
 }
 .manuel h1 {
   font-size: 80px;
   padding-left: 60px;
-  color: white;
+  color: black;
 }
 .think {
   background-color: black;
@@ -167,9 +192,9 @@ a title:hover {
 /* Position the content inside the overlay */
 .overlay-content {
     position: relative;
-    top: 25%; /* 25% from the top */
     width: 100%; /* 100% width */
     text-align: center; /* Centered text/links */
+    top: 20%;
 }
 
 /* The navigation links inside the overlay */
@@ -194,6 +219,7 @@ a title:hover {
     right: 45px;
     font-size: 60px;
 }
+
 @media screen and (min-width: 768px) {
   .circle {
     height: 400px;
@@ -235,7 +261,7 @@ a title:hover {
   .rectangle-1 {
     height: 300px;
     width: 500px;
-    border: 5px solid white;
+    border: 5px solid black;
     background: transparent;
   }
   .hey {
@@ -244,17 +270,17 @@ a title:hover {
   .hey > h2 {
     padding: 0px;
     margin: 0px;
-    color: white;
+    color: black;
   }
   .hey .rectangle-1 h2 {
     padding-left: 420px;
     margin: 0px;
-    color: white;
+    color: black;
   }
   .rectangle-2 {
     height: 300px;
     width: 500px;
-    border: 5px solid white;
+    border: 5px solid black;
     background: transparent;
   }
   .ho {
@@ -263,17 +289,12 @@ a title:hover {
   .ho > h2 {
     padding: 0px;
     margin: 0px;
-    color: white;
+    color: black;
   }
   .ho .rectangle-2 h2 {
     padding-left: 400px;
     margin: 0px;
-    color: white;
-  }
-  .manuel {
-    width: 100%;
-    height: 600px;
-    background-color: black;
+    color: black;
   }
 }
 @media screen and (max-width: 768px) {

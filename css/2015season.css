@@ -1,159 +1,333 @@
-body {
-  font-size: 15px;
-  font-family: 'Megrim', cursive;
-  font-weight: bold;
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
 }
-p {
-  margin: 0px;
+.w3-navbar li a {
+    color: black;
+    background-color: transparent;
+    font-size: 14px;
 }
-h1 {
-  margin: 0px;
-}
-h3{
-  margin: 0px;
-}
-h4{
-  margin: 0px;
-}
-.nav>li>a:focus, .nav>li>a:hover {
-    text-decoration: none;
-    /* background-color: #eee; */
-}
-.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
-  position: relative;
-  background-attachment: FIXED;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.bgimg-1 {
-  background: white;
-  height: 100%;
-  width: 100%;
-}
-.bgimg-2 {
-  background: white;
-  min-height: 400px;
-  width: 100%;
-}
-.bgimg-3 {
-  background: white;
-  height: 500px;
-}
-.bgimg-3 h1 {
-  font-size: 100px;
-  padding: 30px;
-  color: black;
-}
-.bgimg-4 {
-  background: white;
-  height:100px;
-  width: 100%;
-}
-.mirkwood {
-  background: transparent;
-}
-.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
-    color: #d43256;
+.w3-navbar li a:hover {
+    color: grey;
     background-color: transparent;
 }
-.thranduil {
-    width: 500px;
-    left: 750px;
-    bottom: 310px;
-    color: black;
-    position: relative;
+.container {
+  width: 70%;
 }
-h2{
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    opacity: 0.7;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.w3-col.m8, .w3-twothird {
+    width: 100%;
+}
+.w3-padding-64 {
+    padding-bottom: 64px!important;
+}
+.w3-content {
+  max-width: 100%;
   margin: 0px;
 }
-.dropdown-menu {
-  background-color: transparent;
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('/w3images/parallax1.jpg');
+    min-height: 400px;
 }
-ul.dropdown-menu:hover {
-  background: transparent;
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url("/w3images/parallax2.jpg");
+    min-height: 400px;
 }
-.navbar-header a.navbar-brand {
-  color: #58cee3;
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("/w3images/parallax3.jpg");
+    min-height: 400px;
 }
-.navbar-default {
-  background-color: transparent;
-  border-color: transparent;
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
 }
-.navbar-header a.navbar-brand:hover {
-  color: #58cee3;
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+body {
+  padding-bottom: 3rem;
+  color: #5a5a5a;
+  font-size: 15px;
+  font-weight: bold;
 }
-.navbar-default .navbar-nav>.active>a{
-  color: #58cee3;
-  background: transparent;
+.hitit {
+  background-image: url("http://i2.cdn.turner.com/cnnnext/dam/assets/160825160953-05-week-in-photos-0826-super-169.jpg");
+  height: 400px;
 }
-.navbar-default .navbar-nav>.active>a:hover {
-  background: transparent;
-  color: #58cee3;
+
+.btn {
+    background: black;
+    border: 0px solid transparent;
+    border-radius: 4px;
+    color: white;
 }
-.navbar-default .navbar-nav>li>a {
-  color: #d43256;
-  font-size: 20px;
+.btn:hover {
+    background: white;
+    border: 1px solid black;
+    border-radius: 4px;
+    color: black;
 }
-.navbar-default .navbar-nav>li>a:hover {
-  color: #58cee3;
+.rivendell img {
+  width: 80px;
+  height: 80px;
+  background: white;
 }
-.dropdown-menu>li>a {
-  color: #d43256;
-  background: transparent;
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-6 {
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
-.dropdown-menu>li>a:hover {
-  background-color: transparent;
-  color: #58cee3;
+.marketing h2 {
+  font-weight: normal;
 }
-a.navbar-brand {
-  font-size: 40px;
+.marketing .col-lg-6 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
 }
-.shire {
+.marketing {
+  padding-top: 50px;
+}
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+a title:hover {
+  background:white;
+  color: black;
+  font-size: 12px;
+}
+.great {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 55px;
+  z-index: 5;
+}
+.great hr {
+  margin: 8px;
+  padding: 0px;
+  border-color: black;
+}
+.manuel {
   width: 100%;
-  height: 670px;
+  background-color: white;
 }
-.dropdown:hover .dropdown-menu {
+.manuel h1 {
+  font-size: 80px;
+  padding-left: 60px;
+  color: black;
+}
+.think {
+  background-color: black;
+}
+.thranduilion {
+  height: 600px;
+  background-color: black;
+}
+.think hr { padding: 0px; margin: 0px; width: 60%; margin: auto;}
+.footer {
+  height: 100px;
+  background-color: white;
+}
+.footer img {
+  height: 50px;
+  width: 50px;
+}
+.opherion {
+  margin: auto;
+  width: 158px;
+  padding-top: 10px;
+}
+.opherion p {
+  color: black;
+  text-align: center;
+  padding-right: 5px;
+}
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    top: 20%;
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 0px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
     display: block;
-    margin-top: 0; // remove the gap so it doesn't close
-    color: #58cee3;
- }
-.dropdown-menu .divider {
-  margin: 1px;
+    transition: 0.3s;
 }
-ul.dropdown-menu li:hover {
-  color: #d43256;
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
 }
-.mirkwood {
-  width: 100%;
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
 }
+
 @media screen and (min-width: 768px) {
-  .mirkwood {
-    width: 70%;
+  .circle {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    border: 4px solid white;
     margin: auto;
-    padding-top: 20px;
   }
-  .shire {
-    width: 100%;
+  .rohan {
+    position: relative;
+    bottom: 45px;
+    width: 80px;
+    height: 80px;
+    left: 10pc;
+  }
+  .middle-earth {
+    position: relative;
+    top: 4pc;
+    right: 200px;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+  }
+  .gandalf {
+    position: relative;
+    bottom: 1pc;
+    left: 194px;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+  }
+  .legolas {
+    position: relative;
+    top: 7pc;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+  }
+  .rectangle-1 {
+    height: 300px;
+    width: 500px;
+    border: 5px solid black;
+    background: transparent;
+  }
+  .hey {
+    padding-left: 100px;
+  }
+  .hey > h2 {
+    padding: 0px;
+    margin: 0px;
+    color: black;
+  }
+  .hey .rectangle-1 h2 {
+    padding-left: 420px;
+    margin: 0px;
+    color: black;
+  }
+  .rectangle-2 {
+    height: 300px;
+    width: 500px;
+    border: 5px solid black;
+    background: transparent;
+  }
+  .ho {
+    padding-left: 100px;
+  }
+  .ho > h2 {
+    padding: 0px;
+    margin: 0px;
+    color: black;
+  }
+  .ho .rectangle-2 h2 {
+    padding-left: 400px;
+    margin: 0px;
+    color: black;
   }
 }
 @media screen and (max-width: 768px) {
-  .shire {
+  .manuel {
     width: 100%;
+    height: 100%;
+    background-color: black;
   }
 }
 @media screen and (max-width: 600px) {
-  .shire {
+  .manuel {
     width: 100%;
+    height: 100%;
+    background-color: black;
   }
 }
 @media screen and (max-width: 480px) {
-  .shire {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+  }
+  .manuel {
     width: 100%;
+    height: 100%;
+    background-color: black;
   }
 }
 @media only screen and (max-width : 320px) {
-  .shire {
+  .manuel {
     width: 100%;
+    height: 100%;
+    background-color: black;
   }
 }
