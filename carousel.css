@@ -1,3 +1,6 @@
+.body {
+  background-color: black;
+}
 .lin {
   background-image: url("https://github.com/Clarachun/R2G2Website/blob/master/Photographs/134045728_14256865782481n.png?raw=true");
   height: 662px;
@@ -11,31 +14,6 @@
   width: 80px;
   height: 80px;
   background: white;
-}
-.circle {
-  height: 400px;
-  width: 400px;
-  border-radius: 50%;
-  border: 4px solid white;
-  margin: auto;
-}
-a img.rohan {
-  position: relative;
-  bottom: 45px;
-}
-a img.middle-earth {
-  position: relative;
-  top: 40px;
-  right: 200px;
-}
-a img.gandalf {
-  position: relative;
-  bottom: 56px;
-  left: 194px;
-}
-a img.legolas {
-  position: relative;
-  top: 55px;
 }
 a title:hover {
   background:white;
@@ -63,6 +41,24 @@ a title:hover {
     font-size: 50px;
     color: white;
 }
+.manuel {
+  width: 100%;
+  height: 600px;
+  background-color: black;
+}
+.manuel h1 {
+  font-size: 80px;
+  padding-left: 60px;
+  color: white;
+}
+.think {
+  background-color: black;
+}
+.thranduilion {
+  height: 600px;
+  background-color: black;
+}
+.think hr { padding: 0px; margin: 0px; width: 60%; margin: auto;}
 /* The Overlay (background) */
 .overlay {
     /* Height & width depends on how you want to reveal the overlay (see JS below) */
@@ -73,7 +69,6 @@ a title:hover {
     left: 0;
     top: 0;
     background-color: rgb(0,0,0); /* Black fallback color */
-    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
     overflow-x: hidden; /* Disable horizontal scroll */
     transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
@@ -89,12 +84,12 @@ a title:hover {
 
 /* The navigation links inside the overlay */
 .overlay a {
-    padding: 8px;
+    padding: 0px;
     text-decoration: none;
     font-size: 36px;
     color: #818181;
-    display: block; /* Display block instead of inline */
-    transition: 0.3s; /* Transition effects on hover (color) */
+    display: block;
+    transition: 0.3s;
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -110,12 +105,119 @@ a title:hover {
     font-size: 60px;
 }
 
-/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-@media screen and (max-height: 450px) {
-    .overlay a {font-size: 20px}
-    .overlay .closebtn {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
-    }
+@media screen and (min-width: 768px) {
+  .circle {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    border: 4px solid white;
+    margin: auto;
+  }
+  .rohan {
+    position: relative;
+    bottom: 45px;
+    width: 80px;
+    height: 80px;
+    left: 10pc;
+  }
+  .middle-earth {
+    position: relative;
+    top: 4pc;
+    right: 200px;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+  }
+  .gandalf {
+    position: relative;
+    bottom: 1pc;
+    left: 194px;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+  }
+  .legolas {
+    position: relative;
+    top: 7pc;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+  }
+  .rectangle-1 {
+    height: 300px;
+    width: 500px;
+    border: 5px solid white;
+    background: transparent;
+  }
+  .hey {
+    padding-left: 100px;
+  }
+  .hey > h2 {
+    padding: 0px;
+    margin: 0px;
+    color: white;
+  }
+  .hey .rectangle-1 h2 {
+    padding-left: 420px;
+    margin: 0px;
+    color: white;
+  }
+  .rectangle-2 {
+    height: 300px;
+    width: 500px;
+    border: 5px solid white;
+    background: transparent;
+  }
+  .ho {
+    padding-left: 100px;
+  }
+  .ho > h2 {
+    padding: 0px;
+    margin: 0px;
+    color: white;
+  }
+  .ho .rectangle-2 h2 {
+    padding-left: 400px;
+    margin: 0px;
+    color: white;
+  }
+  .manuel {
+    width: 100%;
+    height: 600px;
+    background-color: black;
+  }
+}
+@media screen and (max-width: 768px) {
+  .manuel {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+  }
+}
+@media screen and (max-width: 600px) {
+  .manuel {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+  }
+}
+@media screen and (max-width: 480px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+  }
+  .manuel {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+  }
+}
+@media only screen and (max-width : 320px) {
+  .manuel {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+  }
 }
