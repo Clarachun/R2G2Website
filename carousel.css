@@ -1,205 +1,121 @@
-body {
-  font-size: 15px;
-  font-family: 'Megrim', cursive;
-  font-weight: bold;
+.lin {
+  background-image: url("https://github.com/Clarachun/R2G2Website/blob/master/Photographs/134045728_14256865782481n.png?raw=true");
+  height: 662px;
 }
-p {
+.navbar {
+  height: 100px;
   margin: 0px;
+  top: 20px;
 }
-h1 {
-  margin: 0px;
+.rivendell img {
+  width: 80px;
+  height: 80px;
+  background: white;
 }
-h3{
-  margin: 0px;
+.circle {
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  border: 4px solid white;
+  margin: auto;
 }
-h4{
-  margin: 0px;
-}
-.nav>li>a:focus, .nav>li>a:hover {
-    text-decoration: none;
-    /* background-color: #eee; */
-}
-.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
+a img.rohan {
   position: relative;
-  background-attachment: FIXED;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  bottom: 45px;
 }
-.camelot {
-    border: 1px solid black;
-    padding-left: 10px;
+a img.middle-earth {
+  position: relative;
+  top: 40px;
+  right: 200px;
 }
-.bgimg-1 {
-  background: white;
-  height: 100%;
-  width: 100%;
+a img.gandalf {
+  position: relative;
+  bottom: 56px;
+  left: 194px;
 }
-h1 {
-  margin-top: 20px;
-  margin-bottom: 10px;
+a img.legolas {
+  position: relative;
+  top: 55px;
 }
-.bgimg-2 {
-  width: 60%;
-  margin: auto;
-}
-.bgimg-3 h1 {
-  margin-left: 50px;
-}
-.bgimg-3 p {
-    padding-right: 10px;
-}
-.bgimg-3 {
-    width: 60%;
-    margin: auto;
-    padding-top: 50px;
-}
-p {
-    margin: 0 0 10px;
-}
-.bgimg-3 h1 {
+a title:hover {
+  background:white;
   color: black;
+  font-size: 12px;
 }
-.bgimg-4 {
-  background: white;
-  width: 100%;
+.great {
+  width: 50px;
+  height: 50px;
+  border: 1px solid white;
+  position: fixed;
+  top: 45px;
+  right: 55px;
 }
-.mirkwood {
-  background: transparent;
+.great hr {
+  margin: 10px;
+  padding: 0px;
+  border-color: white;
 }
-.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
-    color: #d43256;
-    background-color: transparent;
-}
-.forever {
-  margin: auto;
-  text-align: center;
-}
-.rivendell {
-  margin: auto;
-  color: white;
-  background-color: black;
-  height: 120px;
-  border-top-left-radius: 50px;
-  border-bottom-right-radius: 50px;
-}
-.thranduil {
-    width: 500px;
-    left: 750px;
-    bottom: 310px;
-    color: black;
+.navbar h1 {
     position: relative;
-}
-h2{
-  margin: 0px;
-}
-.dropdown-menu {
-  background-color: transparent;
-}
-ul.dropdown-menu:hover {
-  background: transparent;
-}
-.navbar-header a.navbar-brand {
-  color: #58cee3;
-}
-.navbar-default {
-  background-color: transparent;
-  border-color: transparent;
-}
-.navbar-header a.navbar-brand:hover {
-  color: #58cee3;
-}
-.navbar-default .navbar-nav>.active>a{
-  color: #58cee3;
-  background: transparent;
-}
-.navbar-default .navbar-nav>.active>a:hover {
-  background: transparent;
-  color: #58cee3;
-}
-.navbar-default .navbar-nav>li>a {
-  color: #d43256;
-  font-size: 20px;
-}
-.navbar-default .navbar-nav>li>a:hover {
-  color: #58cee3;
-}
-.dropdown-menu>li>a {
-  color: #d43256;
-  background: transparent;
-}
-.dropdown-menu>li>a:hover {
-  background-color: transparent;
-  color: #58cee3;
-}
-a.navbar-brand {
-  font-size: 40px;
-}
-.shire {
-  width: 100%;
-}
-.dropdown:hover .dropdown-menu {
-    display: block;
-    margin-top: 0; // remove the gap so it doesn't close
-    color: #58cee3;
- }
-.dropdown-menu .divider {
-  margin: 1px;
-}
-ul.dropdown-menu li:hover {
-  color: #d43256;
-}
-.mirkwood {
-  width: 100%;
-}
-@media screen and (min-width: 768px) {
-  .mirkwood {
-    width: 70%;
+    top: 25px;
+    padding-left: 600px;
     margin: auto;
-    padding-top: 20px;
-  }
-  #piechart {
-    width: 500px;
-    height: 300px;
-  }
+    font-size: 50px;
+    color: white;
 }
-@media screen and (min-width: 768px) {
-  .rivendell h1 {
-    font-size: 70px;
-    padding-top: 20px;
-    padding-left: 40px;
-  }
-  .forever {
-    margin-top: 70px;
-  }
-  #piechart {
-    margin: auto;
-  }
-  .bgimg-4 {
-    background: white;
-    width: 70%;
-    height: 300px;
-    margin: auto;
-  }
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
-@media screen and (max-width: 600px) {
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
 }
-@media screen and (max-width: 480px) {
-  body {
-    width: 100%;
-  }
-  .rivendell h1 {
-    font-size: 40px;
-    padding-top: 40px;
-    padding-left: 30px;
-  }
-  .bgimg-2 {
-    width: 80%;
-  }
-  #piechart {
-    width: 390px;
-    height: 300px;
-  }
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
 }
-@media only screen and (max-width : 320px) {
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
 }
