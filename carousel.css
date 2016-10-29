@@ -1,14 +1,95 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+body {
+  padding-bottom: 3rem;
+  color: #5a5a5a;
+  font-size: 15px;
+  font-weight: bold;
+}
+.hitit {
+  background-image: url("http://i2.cdn.turner.com/cnnnext/dam/assets/160825160953-05-week-in-photos-0826-super-169.jpg");
+  height: 400px;
+}
+
+.btn {
+    background: black;
+    border: 0px solid transparent;
+    border-radius: 4px;
+    color: white;
+}
+.btn:hover {
+    background: white;
+    border: 1px solid black;
+    border-radius: 4px;
+    color: black;
+}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption h3 {
+    margin-bottom: 5pc;
+    font-size: 50px;
+    margin-right: 400px;
+  }
+  .carousel-caption a {
+    text-decoration: none;
+    color: white;
+  }
+  .carousel-caption a:hover {
+    text-decoration: none;
+    color: white;
+  }
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
 .body {
   background-color: black;
 }
 .lin {
   background-image: url("https://github.com/Clarachun/R2G2Website/blob/master/Photographs/134045728_14256865782481n.png?raw=true");
   height: 662px;
-}
-.navbar {
-  height: 100px;
-  margin: 0px;
-  top: 20px;
 }
 .rivendell img {
   width: 80px;
@@ -23,7 +104,7 @@ a title:hover {
 .great {
   width: 50px;
   height: 50px;
-  border: 1px solid white;
+  border: 1px solid black;
   position: fixed;
   top: 45px;
   right: 55px;
@@ -31,15 +112,7 @@ a title:hover {
 .great hr {
   margin: 10px;
   padding: 0px;
-  border-color: white;
-}
-.navbar h1 {
-    position: relative;
-    top: 25px;
-    padding-left: 600px;
-    margin: auto;
-    font-size: 50px;
-    color: white;
+  border-color: black;
 }
 .manuel {
   width: 100%;
@@ -59,6 +132,24 @@ a title:hover {
   background-color: black;
 }
 .think hr { padding: 0px; margin: 0px; width: 60%; margin: auto;}
+.footer {
+  height: 100px;
+  background-color: white;
+}
+.footer img {
+  height: 50px;
+  width: 50px;
+}
+.opherion {
+  margin: auto;
+  width: 158px;
+  padding-top: 10px;
+}
+.opherion p {
+  color: black;
+  text-align: center;
+  padding-right: 5px;
+}
 /* The Overlay (background) */
 .overlay {
     /* Height & width depends on how you want to reveal the overlay (see JS below) */
