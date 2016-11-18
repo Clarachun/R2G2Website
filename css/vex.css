@@ -36,8 +36,6 @@ body, html {
 }
 /* First image (Logo. Full height) */
 .bgimg-1 {
-    background-image: url('/w3images/parallax1.jpg');
-    min-height: 100%;
 }
 
 /* Second image (Portfolio) */
@@ -91,6 +89,37 @@ body {
   width: 80px;
   height: 80px;
   background: white;
+}
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-6 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-6 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+.marketing {
+  padding-top: 50px;
+}
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
 }
 a title:hover {
   background:white;

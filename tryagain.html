@@ -1,118 +1,176 @@
 <!doctype html>
 <html class="no-js" lang="">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <!-- Place favicon.ico in the root directory -->
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" href="carousel.css">
-    <link href="https://fonts.googleapis.com/css?family=Megrim" rel="stylesheet">
-
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-      google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawChart);
-        function drawChart() {
-          var data = google.visualization.arrayToDataTable([
-            ['Task', 'Values'],
-            ['Wins',     6],
-            ['Losses',      2],
-            ['Ties',  0],
-            ]);
-          var options = {
-            title: 'Our Wins and Losses for this Season'
-          };
-          var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-          chart.draw(data, options);
-        }
-    </script>
-</head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" href="carousel.css">
+        <link href="https://fonts.googleapis.com/css?family=Megrim" rel="stylesheet">
+    </head>
 
     <body>
-      <div class="bgimg-1">
-        <div class="caption">
-          <div class="shire">
-            <div class="mirkwood">
-              <nav class="navbar navbar-default">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                  </button>
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+
+          <div class="item active">
+            <img src="http://www.theeurope.com/files/images/new/dunloe-1920-900-valentia-island.jpg" alt="Chania">
+            <div class="carousel-caption">
+              <a href="2014season.html"><h3>Vex Skyrise</h3></a>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="http://www.theeurope.com/files/images/new/dunloe-1920-900-valentia-island.jpg" alt="Flower">
+            <div class="carousel-caption">
+              <a href="2015season.html"><h3>Vex Skyrise</h3></a>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="http://www.theeurope.com/files/images/new/dunloe-1920-900-valentia-island.jpg" alt="Flower">
+            <div class="carousel-caption">
+              <a href="2016season.html"><h3>Vex Skyrise</h3></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+      <!-- The overlay -->
+      <div class="w3-top">
+        <ul class="w3-navbar" id="myNavbar">
+          <li><a href="index.html">R2G2</a></li>
+          <li class="w3-hide-small w3-right">
+            <div id="myNav" class="overlay">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <div class="overlay-content">
+                <div class="rivendell">
+                  <div class="circle">
+                    <div class="rohan">
+                      <a title="latest news" href="latest.html">
+                        <img src="https://raw.githubusercontent.com/Clarachun/R2G2Website/master/Photographs/clip-art-black-griffin-clipart-1.jpg">
+                      </a>
+                    </div>
+                      <div class="middle-earth">
+                        <a title="vex" href="vex.html">
+                          <img src="https://raw.githubusercontent.com/Clarachun/R2G2Website/master/Photographs/android-logo-icon-64976.png">
+                        </a>
+                      </div>
+                      <div class="gandalf">
+                        <a title="about us" href="about.html">
+                          <img src="https://github.com/Clarachun/R2G2Website/blob/master/Photographs/2000px-Venus_symbol.svg.png?raw=true">
+                        </a>
+                      </div>
+                      <div class="legolas">
+                        <a title="rocketry" href="rocketry.html">
+                          <img src="https://github.com/Clarachun/R2G2Website/blob/master/Photographs/Space-rocket-clip-art-image-search-results-clipart-image-2.png?raw=true">
+                        </a>
+                      </div>
+                    </div>
                 </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                  <ul class="nav navbar-nav navbar-left">
-                    <li class="active"><a href="file:///C:/Users/YT15/Documents/GitHub/R2G2Website/index.html">HOME</a></li>
-                    <li class="dropdown">
-                      <a href="file:///C:/Users/YT15/Documents/GitHub/R2G2Website/about.html" class="dropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ABOUT</a>
-                      <ul style="  background: transparent" class="dropdown-menu">
-                        <li><a href="file:///C:/Users/YT15/Documents/GitHub/R2G2Website/about.html">ABOUT</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="file:///C:/Users/YT15/Documents/GitHub/R2G2Website/team8390A.html">TEAM 3890A</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="file:///C:/Users/YT15/Documents/GitHub/R2G2Website/team8390B.html">TEAM 3890B</a></li>
-                      </ul>
-                      <li class="dropdown">
-                        <a href="file:///C:/Users/YT15/Documents/GitHub/R2G2Website/vex.html" class="dropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">VEX</a>
-                        <ul style="  background: transparent" class="dropdown-menu">
-                          <li><a href="file:///C:/Users/YT15/Documents/GitHub/R2G2Website/2014season.html">2014-2015 SEASON</a></li>
-                          <li role="separator" class="divider"></li>
-                          <li><a href="file:///C:/Users/YT15/Documents/GitHub/R2G2Website/2015season.html">2015-2016 SEASON</a></li>
-                          <li role="separator" class="divider"></li>
-                          <li><a href="file:///C:/Users/YT15/Documents/GitHub/R2G2Website/2016season.html">2016-2017 SEASON</a></li>
-                        </ul>
-                        <li><a href="file:///C:/Users/YT15/Documents/GitHub/R2G2Website/rocketry.html">ROCKETRY</a></li>
-                      <li><a href="/file:///C:/Users/YT15/Documents/GitHub/R2G2Website/latest.html">LASTEST NEWS</a></li>
-                      <li><a href="file:///C:/Users/YT15/Documents/GitHub/R2G2Website/contact.html">CONTACT US</a></li>
-                    </li>
-                  </ul>
-                </div><!-- /.navbar-collapse -->
-              </nav>
+              </div>
             </div>
-          </div><!-- /.container-fluid -->
+          </li>
         </div>
+        <span onclick="openNav()"><div class="great"><hr><hr><hr></div></span>
+        </ul>
+      </div>
 
-        <div class="bgimg-2">
-          <div class="rivendell">
-            <h1>TEAM 8390A</h1>
-          </div>
-        </div>
+        <!-- Use any element to open/show the overlay navigation menu -->
+        <span onclick="openNav()"><div class="great"><hr><hr><hr></div></span>
 
-        <div class="bgimg-3">
-          <div class="camelot">
-            <h1>Hello!</h1>
-            <p>We are Team 8390A, formerlly just 8390! We consist of half of the R2G2'S All-Girls Robotics team, and consist of the Seniors and Juniors on our robotics teams here at Notre Dame Academy.</p>
-          </div>
-        </div>
+          <!-- Marketing messaging and featurettes
+          ================================================== -->
+          <!-- Wrap the rest of the page in another container to center all the content. -->
 
-        <div class="bgimg-4">
-          <div class="col-lg-6 col-sm-12"><div id="piechart"></div></div>
-          <div class="col-lg-6 col-sm-12">
-            <div class="forever">
-              <h3>Viewpoint</h3>
-              <p>Ended: 4th Place<br>
-                Won: 6<br>
-                Lost: 3<br>
-                Tied: 0<br>
-                Awards: 1</p>
+          <div class="container marketing">
+
+
+            <div class="row featurette">
+              <div class="col-md-5">
+                <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+              </div>
+              <div class="col-md-7">
+                <h2 class="featurette-heading">NDA IN <span class="text-muted">VEX</span></h2>
+                <p class="lead">Notre Dame Academy has participated in the VEX competition program since January of 2015, starting off with two teams, on the 18th of November they started their second team, Team 3890B.</p>
+              </div>
             </div>
-          </div>
-        </div>
 
-        <div class="bgimg-5">
-        </div>
+            <hr class="featurette-divider">
 
-        <script src="https://code.jquery.com/jquery-1.12.2.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+            <div class="row featurette">
+              <div class="col-md-7 push-md-5">
+                <h2 class="featurette-heading">A little bit about <span class="text-muted">VEX</span></h2>
+                <p class="lead">VEX Robotics Competition is the largest middle
+                and high school robotics competition in the world. Standard matches are composed of two alliances of two teams each competing against each other.
+                There is one robot and one driver per team playing for a limited amount of time. The games include an autonomous section in which the teams are
+                autonomously drive their robots using programming skills. There are currently over 10,000 teams from 32 countries playing in 750 tournaments.</p>
+              </div>
+              <div class="col-md-5 pull-md-7">
+                <img class="http://66.media.tumblr.com/ba854ac9e605631064df35f397075590/tumblr_o8idbj27dp1vvfgflo1_500.jpg" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+              </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+              <div class="col-md-5">
+                <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+              </div>
+              <div class="col-md-7">
+                <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+              </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <!-- /END THE FEATURETTES -->
+
+      <div class="footer">
+        <div class="opherion">
+          <img src="https://5a5a57ff32a328601212-ee0df397c56b146e91fe14be42fa361d.ssl.cf1.rackcdn.com/icon/instagram_logos_glyph/03H5cHNMt-Jni4pe9u+7/glyph-logo_May2016_200.png">
+          <img src="https://pbs.twimg.com/profile_images/492049081770864640/l-cBrf_6.png">
+          <img src="https://image.freepik.com/free-icon/facebook-round_318-26615.jpg">
+          <p>© 2016 Team 3890</p>
+        </div>
+      </div>
+
+      <script src="https://code.jquery.com/jquery-1.12.2.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+      <script>
+      /* Open when someone clicks on the span element */
+      function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+      }
+      /* Close when someone clicks on the "x" symbol inside the overlay */
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }
+      </script>
     </body>
 </html>
