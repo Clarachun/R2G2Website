@@ -35,19 +35,59 @@ body, html {
   margin: 0px;
 }
 /* First image (Logo. Full height) */
-.bgimg-1 {
+.bgimg-1 img {
+  height: 200px;
 }
 
 /* Second image (Portfolio) */
 .bgimg-2 {
-    background-image: url("/w3images/parallax2.jpg");
     min-height: 400px;
+    padding-top: 60px;
 }
-
-/* Third image (Contact) */
+.bgimg-2 h1{
+  position: relative;
+  left: 200px;
+}
+.bgimg-2 p {
+    width: 50%;
+    margin: auto;
+}
+.bgimg-3 #ateam {
+    width: 50%;
+    margin: auto;
+}
+.bgimg-3 #bteam {
+    width: 50%;
+    margin: auto;
+}
+.nav-tabs>li>a {
+    border: 0px solid white;
+    border-radius: 4px 4px 0 0;
+    width: 566px;
+}
+ul.nav.nav-tabs {
+    border: 1px solid black;
+}
+ul.nav.nav-tabs:hover{
+    background-color: white;
+}
+.nav-tabs>li>a:hover {
+  border-color: white !important;
+  border-bottom-color: black !important;
+  color: pink;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    background-color: #fff !important;
+    border: 0px solid #ddd !important;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    color: black !important;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+    background-color: white !important;
+}
 .bgimg-3 {
-    background-image: url("/w3images/parallax3.jpg");
-    min-height: 400px;
+    color: black;
 }
 
 .w3-wide {letter-spacing: 10px;}
@@ -160,13 +200,21 @@ a title:hover {
   background-color: white;
 }
 .footer img {
-  height: 50px;
-  width: 50px;
+  height: 30px;
+  width: 30px;
 }
 .opherion {
   margin: auto;
-  width: 158px;
+  width: 127px;
   padding-top: 10px;
+}
+.train {
+    height: 30px;
+    margin: auto;
+    width: 98px;
+}
+.tab-content {
+  padding-bottom: 50px;
 }
 .opherion p {
   color: black;

@@ -112,6 +112,11 @@ a title:hover {
 .manuel {
   width: 100%;
   background-color: white;
+  margin: auto;
+}
+#myCarousel {
+  width: 60%;
+  margin: auto;
 }
 .manuel h1 {
   font-size: 80px;
