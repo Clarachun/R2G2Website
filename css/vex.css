@@ -1,8 +1,8 @@
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
 body, html {
     height: 100%;
     color: #777;
     line-height: 1.8;
+    font-family: 'muli', sans-serif !important;
 }
 .w3-navbar li a {
     color: black;
@@ -35,7 +35,31 @@ body, html {
   margin: 0px;
 }
 /* First image (Logo. Full height) */
-.bgimg-1 {
+.bgimg-1{
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.bgimg-1 img{
+    min-height: 100%;
+    min-width: 100%;
+}
+.falling {
+  padding-top: 50px;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    color: #fff !important;
+    background-color: black !important;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: #eee;
+    color: black !important;
+}
+a {
+  color: black !important;
 }
 
 /* Second image (Portfolio) */
@@ -58,15 +82,6 @@ body, html {
     .bgimg-1, .bgimg-2, .bgimg-3 {
         background-attachment: scroll;
     }
-}
-/* GLOBAL STYLES
--------------------------------------------------- */
-/* Padding below the footer and lighter body text */
-body {
-  padding-bottom: 3rem;
-  color: #5a5a5a;
-  font-size: 15px;
-  font-weight: bold;
 }
 .hitit {
   background-image: url("http://i2.cdn.turner.com/cnnnext/dam/assets/160825160953-05-week-in-photos-0826-super-169.jpg");
@@ -160,8 +175,13 @@ a title:hover {
   background-color: white;
 }
 .footer img {
-  height: 50px;
-  width: 50px;
+  height: 30px;
+  width: 30px;
+}
+.time {
+  height: 30px;
+  margin: auto;
+  width: 98px;
 }
 .opherion {
   margin: auto;
