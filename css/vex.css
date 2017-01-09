@@ -181,20 +181,21 @@ a title:hover {
   height: 30px;
   width: 30px;
 }
-.time {
-  height: 30px;
-  margin: auto;
-  width: 98px;
-}
 .opherion {
   margin: auto;
-  width: 158px;
+  width: 160px;
   padding-top: 10px;
 }
 .opherion p {
   color: black;
   text-align: center;
   padding-right: 5px;
+  padding-top: 1pc;
+}
+.time {
+  height: 30px;
+  margin: auto;
+  width: 98px;
 }
 /* The Overlay (background) */
 .overlay {
