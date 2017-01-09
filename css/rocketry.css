@@ -46,8 +46,8 @@ body, html {
     min-width: 100%;
 }
 .featurette-image{
-    height: 300px;
-    width: 100%;
+    height: 400px;
+    width: 400px;
     overflow: hidden;
 }
 
